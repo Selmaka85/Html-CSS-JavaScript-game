@@ -1,0 +1,446 @@
+
+html{
+    background:radial-gradient(circle,white,grey);
+    height: 100%;
+    width:100%;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+}
+#container{
+    background:linear-gradient(#13132a,white,#13132a);
+    background-size:cover;
+    width: 80%;
+    height:80%;
+    position: relative;
+    margin:100px auto;
+    border-radius: 10px;
+    align-content: center;  
+    padding:30px;
+    box-shadow: 5px 5px 0px 5px;
+}
+
+#score{
+    background:linear-gradient(#04bebe,white,#04bebe);
+    border-radius:10px;
+    color:#c9042c;
+    padding:13px;
+    position:absolute;
+    box-shadow: 4px 4px 0px 0px #13132a;
+    float:right;
+    left:90%;
+    font-size:21px;
+    font-family: cursive,sans-serif;
+    
+} 
+
+#correct{
+    position:absolute;
+    left:45%;
+    background:linear-gradient(#04c4c4,white,#04c4c4);
+    border-radius:10px;
+    box-shadow: 4px 4px 0px 0px #c3c3d1;
+    color:#c9042c;
+    padding:13px;
+    display:none;
+	border-radius:10px;
+	font-size:21px;
+    font-family: cursive,sans-serif;
+	top:10px;
+}
+
+#wrong{
+   	position:absolute;
+    left:45%;
+    background:linear-gradient(#04c4c4,white,#04c4c4);
+    border-radius:10px;
+    box-shadow: 4px 4px 0px 0px #c3c3d1;
+    color:#c9042c;
+    padding:13px;
+    display:none;
+	border-radius:10px;
+	font-size:21px;
+    font-family: cursive,sans-serif;
+    display:none;
+	top:10px;
+}
+#question{
+    width:80%;
+    height:30%;
+    margin:20px auto 2px auto;
+    background:linear-gradient(#131414,white,#131414);
+    box-shadow: 4px 4px 0px 0px #13132a;
+    border-radius:10px;
+    padding:10px;
+    font-size:80px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color:black;
+}
+#instruction{
+    width:80%;
+    height: 20%;
+    margin:10px auto 10px auto;
+    background:linear-gradient(#131414,white,#131414);
+    box-shadow: 4px 4px 0px 0px #13132a;
+    border-radius:10px;
+    padding:10px;
+    font-size:35px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color:black;
+    line-height: 45px;
+}
+#choices{
+    width:80%;
+    height:100px;
+    margin:5px auto;   
+}
+.box{
+    width: 85px;
+    height:85px;
+    background:radial-gradient(circle,white,#131414);
+    float:left;
+    left:13%;
+    margin-right:100px;
+    box-shadow: 4px 4px 0px 0px #13132a;
+    color:#c9042c;
+    padding:10px;
+    border-radius:10px;
+    font-family: cursive,sans-serif;
+    position: relative;
+    align-content: center;  
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all background 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in; 
+}
+.box:hover{
+    background:radial-gradient(circle,white,chartreuse);
+    box-shadow: 4px 4px 0px 0px #519d06;
+    -webkit-box-shadow: 4px 4px 0px 0px #519d06;
+    -moz-box-shadow: 4px 4px 0px 0px #519d06;
+    -o-box-shadow: 4px 4px 0px 0px #519d06;
+}
+
+.box:active{
+    box-shadow: 0px 0px 0px 0px #519d06;
+    top:6px;
+}
+#box4{
+    margin-right: 0px;
+}
+
+#startreset{
+    width: 85px;
+    background:radial-gradient(circle,white,#131414);
+    margin:10px auto;
+    box-shadow: 6px 6px 0px 0px #13132a;
+    padding:10px;
+    color:#c9042c;
+    cursor:pointer;
+    border-radius:10px;
+    position: relative;
+    align-content: center;  
+    text-align: center;
+    position:relative;
+    font-size: 25px;
+    font-family: cursive,sans-serif;
+    top:10px;
+	left: auto;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in ;
+    -ms-transition: all 0.2s  ease-in; 
+}
+#startreset:hover{
+    background:radial-gradient(circle,white,#db6704);
+    box-shadow: 4px 4px 0px 0px #db6704;
+    -webkit-box-shadow: 4px 4px 0px 0px #db6704;
+    -moz-box-shadow: 4px 4px 0px 0px #db6704;
+    -o-box-shadow: 4px 4px 0px 0px #db6704;
+    -ms-box-shadow: 4px 4px 0px 0px #db6704;
+}
+#startreset:active{
+   box-shadow: 0px 0px 0px 0px #131414;
+    -webkit-box-shadow: 0px 0px 0px 0px #131414;
+    -moz-box-shadow: 0px 0px 0px 0px #131414;
+    -o-box-shadow: 0px 0px 0px 0px #131414;
+    -ms-box-shadow: 0px 0px 0px 0px #131414;
+    top:6px; 
+}
+#timeremaining{
+    width:200px;
+    padding:10px;
+    position:absolute;
+    font-family: cursive,sans-serif;
+    top:88%;
+    left:78%;
+    background:radial-gradient(circle,white,#131414);
+    border-radius:10px;
+    box-shadow: 6px 6px 0px 0px #13132a;
+    text-align: center;
+    display:none;
+    /*visibility: hidden;*/
+    font-size:18px;
+}
+
+#gameOver{
+    width: 80%;
+    height: 55%;
+    top:10%;
+    left:10%;
+    text-transform: uppercase;
+    background: linear-gradient(#fa9101,#e8d49e,#915400);
+    border-radius:10px;
+    box-shadow: 6px 6px 0px 0px #db6704;
+    -webkit-box-shadow: 6px 6px 0px 0px #db6704;
+    -moz-box-shadow: 6px 6px 0px 0px #db6704;
+    -o-box-shadow: 6px 6px 0px 0px #db6704;
+    -ms-box-shadow: 6px 6px 0px 0px #db6704;
+    text-align: center;
+    color:white;
+    position:absolute;
+    font-size: 65px;  
+    float:left;
+    z-index:2;
+    display:none;
+}
+.footer{
+    padding:0.5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 850px) /*The @media rule allows different style rules for different media in the same style sheet.*/
+{
+	html{
+    background:radial-gradient(circle,white,grey);
+    height: 100%;
+    width:100%;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+}
+#container{
+    background:linear-gradient(#13132a,white,#13132a);
+    background-size:cover;
+    width: 40%;
+    height:40%;
+    position: relative;
+    margin:100px auto;
+    border-radius: 10px;
+    align-content: center;  
+    padding:80px;
+    box-shadow: 5px 5px 0px 5px;
+}
+
+#score{
+    background:linear-gradient(#04bebe,white,#04bebe);
+    border-radius:10px;
+    color:#c9042c;
+    padding:13px;
+    position:absolute;
+    box-shadow: 4px 4px 0px 0px #13132a;
+    float:right;
+    left:90%;
+    font-size:21px;
+    font-family: cursive,sans-serif;
+    
+} 
+
+#correct{
+    position:absolute;
+    left:45%;
+    background:linear-gradient(#04c4c4,white,#04c4c4);
+    border-radius:10px;
+    box-shadow: 4px 4px 0px 0px #c3c3d1;
+    color:#c9042c;
+    padding:13px;
+    display:none;
+	border-radius:10px;
+	font-size:21px;
+    font-family: cursive,sans-serif;
+	top:10px;
+}
+
+#wrong{
+   	position:absolute;
+    left:45%;
+    background:linear-gradient(#04c4c4,white,#04c4c4);
+    border-radius:10px;
+    box-shadow: 4px 4px 0px 0px #c3c3d1;
+    color:#c9042c;
+    padding:13px;
+    display:none;
+	border-radius:10px;
+	font-size:21px;
+    font-family: cursive,sans-serif;
+    display:none;
+	top:10px;
+}
+#question{
+    width:80%;
+    height:30%;
+    margin:20px auto 2px auto;
+    background:linear-gradient(#131414,white,#131414);
+    box-shadow: 4px 4px 0px 0px #13132a;
+    border-radius:10px;
+    padding:10px;
+    font-size:80px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color:black;
+}
+#instruction{
+    width:80%;
+    height: 20%;
+    margin:10px auto 10px auto;
+    background:linear-gradient(#131414,white,#131414);
+    box-shadow: 4px 4px 0px 0px #13132a;
+    border-radius:10px;
+    padding:5px;
+    font-size:35px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color:black;
+    line-height: 45px;
+}
+#choices{
+    width:0%;
+    height:100px;
+    margin:5px auto;   
+}
+.box{
+    width: 25px;
+    height:25px;
+    background:radial-gradient(circle,white,#131414);
+    float:left;
+    left:10%;
+    margin-right:100px;
+    box-shadow: 4px 4px 0px 0px #13132a;
+    color:#c9042c;
+    padding:10px;
+    border-radius:10px;
+    font-family: cursive,sans-serif;
+    position: relative;
+    align-content: center;  
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all background 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in; 
+}
+.box:hover{
+    background:radial-gradient(circle,white,chartreuse);
+    box-shadow: 4px 4px 0px 0px #519d06;
+    -webkit-box-shadow: 4px 4px 0px 0px #519d06;
+    -moz-box-shadow: 4px 4px 0px 0px #519d06;
+    -o-box-shadow: 4px 4px 0px 0px #519d06;
+}
+
+.box:active{
+    box-shadow: 0px 0px 0px 0px #519d06;
+    top:6px;
+}
+#box4{
+    margin-right: 0px;
+}
+
+#startreset{
+    width: 45px;
+	height: 45px;
+    background:radial-gradient(circle,white,#131414);
+    margin:90px auto;
+    box-shadow: 6px 6px 0px 0px #13132a;
+    padding:10px;
+    color:#c9042c;
+    cursor:pointer;
+    border-radius:10px;
+    position: relative;
+    align-content: center;  
+    text-align: center;
+    position:relative;
+    font-size: 15px;
+    font-family: cursive,sans-serif;
+    top:10px;
+	left: auto;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in ;
+    -ms-transition: all 0.2s  ease-in; 
+}
+#startreset:hover{
+    background:radial-gradient(circle,white,#db6704);
+    box-shadow: 4px 4px 0px 0px #db6704;
+    -webkit-box-shadow: 4px 4px 0px 0px #db6704;
+    -moz-box-shadow: 4px 4px 0px 0px #db6704;
+    -o-box-shadow: 4px 4px 0px 0px #db6704;
+    -ms-box-shadow: 4px 4px 0px 0px #db6704;
+}
+#startreset:active{
+   box-shadow: 0px 0px 0px 0px #131414;
+    -webkit-box-shadow: 0px 0px 0px 0px #131414;
+    -moz-box-shadow: 0px 0px 0px 0px #131414;
+    -o-box-shadow: 0px 0px 0px 0px #131414;
+    -ms-box-shadow: 0px 0px 0px 0px #131414;
+    top:6px; 
+}
+#timeremaining{
+    width:200px;
+    padding:10px;
+    position:absolute;
+    font-family: cursive,sans-serif;
+    top:88%;
+    left:78%;
+    background:radial-gradient(circle,white,#131414);
+    border-radius:10px;
+    box-shadow: 6px 6px 0px 0px #13132a;
+    text-align: center;
+    display:none;
+    /*visibility: hidden;*/
+    font-size:18px;
+}
+
+#gameOver{
+    width: 80%;
+    height: 55%;
+    top:10%;
+    left:10%;
+    text-transform: uppercase;
+    background: linear-gradient(#fa9101,#e8d49e,#915400);
+    border-radius:10px;
+    box-shadow: 6px 6px 0px 0px #db6704;
+    -webkit-box-shadow: 6px 6px 0px 0px #db6704;
+    -moz-box-shadow: 6px 6px 0px 0px #db6704;
+    -o-box-shadow: 6px 6px 0px 0px #db6704;
+    -ms-box-shadow: 6px 6px 0px 0px #db6704;
+    text-align: center;
+    color:white;
+    position:absolute;
+    font-size: 65px;  
+    float:left;
+    z-index:2;
+    display:none;
+}
+.footer{
+    padding:0.5px;
+    text-align: center;
+}
+
+	
+}
